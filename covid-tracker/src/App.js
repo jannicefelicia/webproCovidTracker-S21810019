@@ -2,9 +2,7 @@ import logo from './covid-logo.png';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import { Global } from './pages/global';
-import { Indo } from './pages/indo';
-import { Province } from './pages/province';
+import { Global, Indo, Province } from './pages';
 
 // function App() {
 //   return (
