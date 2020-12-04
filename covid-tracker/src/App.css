@@ -45,3 +45,40 @@
 .th, td {
   padding: 10px;
 }
+
+.container {
+  display: flex; 
+  align-items: left; 
+  justify-content: left;
+  /* flex-direction: column; */
+}
+
+.red-card {
+  height: 100px;
+  width: 120px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #960200;
+  color: white;
+  padding: 10px;
+}
+
+.yellow-card {
+  height: 100px;
+  width: 120px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #FFD046;
+  color: white;
+  padding: 10px;
+}
+
+.green-card {
+  height: 100px;
+  width: 120px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #7FC29B;
+  color: white;
+  padding: 10px;
+}
