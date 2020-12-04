@@ -4,18 +4,17 @@ import axios from 'axios';
 import NumberFormat from 'react-number-format';
 
 const IndoCard = () => {
-    const [confirmed, setConfirmed] = useState([]);
-    const [recovered, setRecovered] = useState([]);
-    const [deaths, setDeaths] = useState([]);
+    const [confirmed, setConfirmed] = useState("");
+    const [recovered, setRecovered] = useState("");
+    const [deaths, setDeaths] = useState("");
 
     useEffect(() => {
         axios
             .get("https://indonesia-covid-19.mathdro.id/api")
             .then((response) => {
-                console.log(response)
-                setConfirmed(response.data.confirmed)
-                setRecovered(response.data.recovered)
-                setDeaths(response.data.deaths)
+                setConfirmed(response.data.perawatan)
+                setRecovered(response.data.sembuh)
+                setDeaths(response.data.meninggal)
             })
     }, [])
 
@@ -23,24 +22,24 @@ const IndoCard = () => {
         <div className="container">
             <table>
                 <tr>
-                    <th> 
-                        <h1 className="yellow-card">
+                    <td> 
+                        <h3 className="yellow-card">
                             <p>Confirmed</p>
                             <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/> 
-                        </h1> 
-                    </th>
-                    <th> 
-                        <h1 className="green-card">
+                        </h3> 
+                    </td>
+                    <td> 
+                        <h3 className="green-card">
                             <p>Recovered</p>
                             <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/> 
-                        </h1> 
-                    </th>
-                    <th>
-                        <h1 className="red-card">
+                        </h3> 
+                    </td>
+                    <td>
+                        <h3 className="red-card">
                             <p>Deaths</p>
                             <NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/>
-                        </h1> 
-                    </th> 
+                        </h3> 
+                    </td> 
                 </tr>
             </table>
         </div>
