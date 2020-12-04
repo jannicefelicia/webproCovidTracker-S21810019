@@ -4,7 +4,7 @@ import GlobalCard from './Global';
 const Global = () => {
     return(
         <div>
-            <h2>Global</h2>
+            <h4>Scroll down to view number of cases globally:</h4>
             <GlobalCard />
         </div>
     )
