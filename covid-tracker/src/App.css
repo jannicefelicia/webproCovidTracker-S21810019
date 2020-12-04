@@ -43,19 +43,18 @@
 }
 
 .th, td {
-  padding: 10px;
+  padding: 20px;
 }
 
 .container {
   display: flex; 
   align-items: left; 
   justify-content: center;
-  /* flex-direction: column; */
 }
 
 .red-card {
   height: 100px;
-  width: 120px;
+  width: 150px;
   border-radius: 15px;
   font-size: 16px;
   background-color: #960200;
@@ -65,7 +64,7 @@
 
 .yellow-card {
   height: 100px;
-  width: 120px;
+  width: 150px;
   border-radius: 15px;
   font-size: 16px;
   background-color: #FFD046;
@@ -75,10 +74,30 @@
 
 .green-card {
   height: 100px;
-  width: 120px;
+  width: 150px;
   border-radius: 15px;
   font-size: 16px;
   background-color: #7FC29B;
   color: white;
+  padding: 10px;
+}
+
+.blue-card {
+  height: 100px;
+  width: 500px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #275DAD;
+  color: white;
+  padding: 10px;
+}
+
+.purple-card {
+  height: 100px;
+  width: 500px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  color: black;
   padding: 10px;
 }

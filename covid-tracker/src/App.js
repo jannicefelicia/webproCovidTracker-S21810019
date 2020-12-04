@@ -4,43 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Global, Indo, Province } from './pages';
 
-// function App() {
-//   return (
-    
-//         <table>
-//           <td>
-//           <a
-//             className="App-link"
-//             href="/covid-tracker/src/Global.js"
-//             rel="noopener noreferrer"
-//           >
-//             Global
-//           </a>
-//           </td>
-//           <td>
-//           <a
-//             className="App-link"
-//             href="/covid-tracker/src/Indo.js"
-//             rel="noopener noreferrer"
-//           >
-//             Indonesia
-//           </a>
-//           </td>
-//           <td>
-//           <a
-//             className="App-link"
-//             href="/covid-tracker/src/Province.js"
-//             rel="noopener noreferrer"
-//           >
-//             Per Province
-//           </a>
-//           </td>
-//         </table>
-      
-//   );
-// }
-
-const App = () =>{
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -49,23 +13,25 @@ const App = () =>{
       <Router>
           <div>
               <nav>
-                  <ul>
-                      <li>
-                          <Link to="/global">
-                              Global
-                          </Link>
-                      </li>
-                      <li>
-                          <Link to="/indo">
-                              Indonesia
-                          </Link>
-                      </li>
-                      <li>
-                          <Link to="/province">
-                              Province
-                          </Link>
-                      </li>
-                  </ul>
+                  <div>
+                    <table>
+                        <td>
+                            <Link to="/global">
+                                <h4>Global</h4>
+                            </Link>
+                        </td>
+                        <td>
+                            <Link to="/indo">
+                                <h4>Indonesia</h4>
+                            </Link>
+                        </td>
+                        <td>
+                            <Link to="/province">
+                                <h4>Province</h4>
+                            </Link>
+                        </td>
+                    </table>
+                   </div>
               </nav>
           </div>
           <Switch>

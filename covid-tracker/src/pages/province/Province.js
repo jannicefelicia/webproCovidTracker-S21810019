@@ -14,8 +14,8 @@ const ProvCard = () => {
 
     return(
         <div className="container">
-            <table border="1">
-                <tr>
+            <table >
+                <tr className="blue-card">
                     <th>Province</th>
                     <th>Confirmed</th>
                     <th>Recovered</th>
@@ -23,8 +23,8 @@ const ProvCard = () => {
                 </tr>
                 {province?.map((item) => {
                     return(
-                        <tr>
-                            <th>{item.provinsi}</th>
+                        <tr className="purple-card">
+                            <td>{item.provinsi}</td>
                             <td><NumberFormat value={item.kasusPosi} thousandSeparator={true} displayType={'text'}/></td>
                             <td><NumberFormat value={item.kasusSemb} thousandSeparator={true} displayType={'text'}/></td>
                             <td><NumberFormat value={item.kasusMeni} thousandSeparator={true} displayType={'text'}/></td>
